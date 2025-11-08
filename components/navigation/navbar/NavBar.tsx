@@ -1,5 +1,6 @@
 import React from 'react'
-import { FiBell, FiMessageSquare } from 'react-icons/fi'
+import { FaBell } from 'react-icons/fa'
+import { FaMessage } from 'react-icons/fa6'
 
 const NavBar = () => {
   return (
@@ -7,8 +8,8 @@ const NavBar = () => {
         <div>DevConnect</div>
         <div>Search</div>
         <div className='flex gap-4 items-center'>
-            <FiMessageSquare className='text-2xl' />
-            <FiBell className='text-2xl' />
+            <FaMessage className='text-2xl' />
+            <FaBell className='text-2xl' />
             <div className='rounded-full bg-green-50 w-12 h-12 flex justify-center items-center  '>PR</div>
 
         </div>

@@ -3,10 +3,10 @@ import NavBar from '../../components/navigation/navbar/NavBar'
 
 const RootLayout = ({children}:{children:React.ReactNode}) => {
   return (
-    <div>
+    <main>
         <NavBar/>
         {children}
-    </div>
+    </main>
   )
 }
 

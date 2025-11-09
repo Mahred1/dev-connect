@@ -10,7 +10,7 @@ async function handleSignIn(provider:'github'|'google'){
   try {
     await signIn(provider,{
     callbackUrl:ROUTES.HOME,
-    redirect:false
+    redirect:true
   
   })
   } catch (error) {
@@ -27,7 +27,7 @@ const SocialForm = () => {
         <FaGithub style={{width:'24px',height:'24px'}} />
         <span className="text-md ">Login with GitHub</span>
       </Button>
-      <Button className="bg-gray-900 min-h-12 flex-1 py-3.5 px-4 cursor-pointer ">
+      <Button onClick={()=>handleSignIn('google')} className="bg-gray-900 min-h-12 flex-1 py-3.5 px-4 cursor-pointer ">
         <FcGoogle style={{width:'24px',height:'24px'}} />
         <span className="text-md ">Login with Google</span>
       </Button>

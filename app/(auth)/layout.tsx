@@ -1,4 +1,4 @@
-import SocialForm from "@/components/Form/SocialForm";
+import SocialForm from "@/components/forms/SocialForm";
 import React from "react";
 
 const AuthLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {

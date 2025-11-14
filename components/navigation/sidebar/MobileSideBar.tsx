@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import {
   Sheet,
@@ -13,7 +14,10 @@ import { NavLinks } from "@/constants/NavLinks";
 import Link from "next/link";
 import Image from "next/image";
 import { Section } from "lucide-react";
+import { usePathname } from "next/navigation";
 const MobileSideBar = () => {
+  const pathname = usePathname();
+
   return (
     <section className="md:hidden">
       <Sheet>
@@ -45,22 +49,26 @@ const MobileSideBar = () => {
               </p>
             </div>
           </SheetHeader>
-          <div className="flex flex-col w-full ml-5 gap-2">
-            {NavLinks.map((link) => (
-              <Link
+          <div className="flex flex-col w-full ml-5 gap-1">
+            {NavLinks.map((link) =>{ 
+              const isActive = pathname===link.route
+              const LinkComponent = () => <Link
                 href={link.route}
-                className=" flex items-center gap-3 px-3 py-4 rounded-lg w-[90%]"
+                className={`${isActive&& 'bg-teal-800'} flex items-center gap-3 px-3 py-4 rounded-lg w-[90%]`}
                 key={link.lable}
               >
                 <Image
+                className={`${isActive&& 'invert'}`}
                   src={link.icon}
                   alt={link.lable}
                   width={24}
                   height={24}
                 />
-                <p>{link.lable}</p>
+                
+                <p className={`${pathname===link.route&& 'invert'}`}>{link.lable}</p>
               </Link>
-            ))}
+              return <LinkComponent key={link.lable}/> }
+            )}
           </div>
         </SheetContent>
       </Sheet>

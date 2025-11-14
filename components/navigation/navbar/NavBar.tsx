@@ -1,6 +1,8 @@
+
 import React from "react";
 import { FaBell } from "react-icons/fa";
 import { FaMessage } from "react-icons/fa6";
+import MobileSideBar from "../sidebar/MobileSideBar";
 
 const NavBar = () => {
   return (
@@ -13,6 +15,8 @@ const NavBar = () => {
         <div className="rounded-full bg-green-50 w-12 h-12 flex justify-center items-center  ">
           PR
         </div>
+        <MobileSideBar/>
+        
       </div>
     </nav>
   );

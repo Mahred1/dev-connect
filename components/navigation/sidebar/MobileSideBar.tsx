@@ -9,16 +9,15 @@ import {
   SheetTitle,
   SheetDescription,
 } from "@/components/ui/sheet";
-import { Button } from "@/components/ui/button";
-import { FaBurger } from "react-icons/fa6";
 import { NavLinks } from "@/constants/NavLinks";
 import Link from "next/link";
-import { Key } from "lucide-react";
+import Image from "next/image";
 const MobileSideBar = () => {
   return (
-    <Sheet>
-      <SheetTrigger>
-        <FaBurger className="lg:hidden" />
+    <Sheet >
+      <section className="md:hidden">
+           <SheetTrigger>
+        <Image className="cursor-pointer" src='icons/menu.svg' width={24} height={24} alt="menu" />
       </SheetTrigger>
       <SheetContent side="left">
         <SheetTitle className="hidden"></SheetTitle>
@@ -28,6 +27,8 @@ const MobileSideBar = () => {
           </SheetClose>
         ))}
       </SheetContent>
+      </section>
+   
     </Sheet>
   );
 };

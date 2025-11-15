@@ -15,6 +15,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Section } from "lucide-react";
 import { usePathname } from "next/navigation";
+import SideBarActions from "./SideBarActions";
 const MobileSideBar = () => {
   const pathname = usePathname();
 
@@ -49,6 +50,7 @@ const MobileSideBar = () => {
               </p>
             </div>
           </SheetHeader>
+          <SideBarActions/>
 
           <div className="flex flex-col w-full ml-5 gap-1">
             {NavLinks.map((link) => {

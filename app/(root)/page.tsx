@@ -10,5 +10,5 @@ export default async function Home() {
       <LocalSearch
       route="/" placeholder="search"  />
     </div>
-  );
+  );   
 }

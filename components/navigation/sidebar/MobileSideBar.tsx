@@ -13,7 +13,7 @@ import {
 import { NavLinks } from "@/constants/NavLinks";
 import Link from "next/link";
 import Image from "next/image";
-import { Section } from "lucide-react";
+
 import { usePathname } from "next/navigation";
 import SideBarActions from "./SideBarActions";
 const MobileSideBar = () => {

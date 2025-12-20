@@ -4,32 +4,32 @@ export const NavLinks = [
   {
     route: ROUTES.HOME,
     lable: "Home",
-    icon:'icons/home.svg'
+    icon:'/icons/home.svg'
   },
   {
     route: ROUTES.PROJECTS,
     lable: "Projects",
-    icon:'icons/projects.svg'
+    icon:'/icons/projects.svg'
   },
   {
     route: ROUTES.JOBS,
     lable: "Jobs",
-    icon:'icons/jobs.svg'
+    icon:'/icons/jobs.svg'
   },
   {
     route: ROUTES.MESSAGES,
     lable: "Messages",
-    icon:'icons/home.svg'
+    icon:'/icons/home.svg'
   },
   {
     route: ROUTES.NETWORK,
     lable: "Network",
-    icon:'icons/network.svg'
+    icon:'/icons/network.svg'
   },
   {
-    route: ROUTES.PROFILE(''),
+    route: ROUTES.PROFILE('1'),
     lable: "Profile",
-    icon:'icons/profile.svg'
+    icon:'/icons/profile.svg'
   },
  
 ];

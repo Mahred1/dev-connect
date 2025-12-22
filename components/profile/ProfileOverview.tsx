@@ -24,14 +24,14 @@ const ProfileOverview = ({
   title,
 }: Props) => {
   return (
-    <div className="sm:bg-red-300 bg-blue-200 rounded-4xl px-4 py-3 mt-5 flex flex-col items-center gap-2">
-      <div className=" relative rounded-full w-24 h-24 overflow-clip">
+    <div className="sm:bg-red-300 bg-blue-200 rounded-4xl px-4 py-3 lg:py-5 mt-5 flex flex-col lg:flex-row lg:justify-around lg:items-start items-center gap-2 ">
+      <div className=" relative rounded-full w-28 h-28 overflow-clip ">
         <Image src={image} fill alt="user profile"></Image>
       </div>
 
-      <div className="flex  flex-col items-center ">
-        <h3 className="text-xl font-light">{name}</h3>
-        <h1 className="text-2xl mb-3">{title}</h1>
+      <div className="flex  flex-col lg:items-start lg:max-w-[70%] items-center ">
+        <h3 className="text-xl font-light mb-2">{name}</h3>
+        <h1 className="text-[24px] font-extralight opacity-75 mb-3">{title}</h1>
 
         <div className="flex gap-3 justify-center flex-wrap ">
           <div className="flex gap-2 items-center">

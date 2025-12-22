@@ -11,7 +11,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
       <MobileSideBar />
       <div className="max-w-screen flex">
         <SideBar />
-        <div className="flex-1 p-5">{children}</div>
+        <div className="flex-1 p-5 mt-10 ">{children}</div>
       </div>
     </main>
   );

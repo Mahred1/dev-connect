@@ -25,7 +25,7 @@ const MobileSideBar = () => {
         <SheetTrigger>
           <Image
             className="cursor-pointer"
-            src="icons/menu.svg"
+            src="/icons/menu.svg"
             width={24}
             height={24}
             alt="menu"
@@ -40,7 +40,7 @@ const MobileSideBar = () => {
           <SheetHeader className="min-w-full">
             <div className="flex items-center  gap-2">
               <Image
-                src={"icons/Logo.svg"}
+                src={"/icons/Logo.svg"}
                 width={24}
                 height={24}
                 alt="dev connect logo"

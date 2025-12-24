@@ -24,12 +24,12 @@ export default async function RootLayout({
   const session = await auth()
   return (
     <html lang="en">
-      <SessionProvider session={session}>
+      {/* <SessionProvider session={session}> */}
       <body className={`${inter.className} antialiased`}>
         {children}
         <Toaster />
       </body>
-      </SessionProvider>
+      {/* </SessionProvider> */}
     </html>
   );
 }

@@ -24,8 +24,8 @@ const ProfileOverview = ({
   title,
 }: Props) => {
   return (
-    <div className="sm:bg-red-300 bg-blue-200 rounded-4xl px-4 py-3 lg:py-5 mt-5 flex flex-col lg:flex-row lg:justify-around lg:items-start items-center gap-2 ">
-      <div className=" relative rounded-full w-28 h-28 overflow-clip ">
+    <div className=" bg-[linear-gradient(0.25turn,#155DFC,#1447E6,#9810FA)] text-gray-50 rounded-2xl w-full px-4 py-4 lg:py-8 lg:px-8 mt-4 mx-3 flex flex-col lg:flex-row lg:justify-start lg:gap-12  lg:items-start items-center gap-2 shadow-2xl ">
+      <div className=" relative rounded-full w-28 lg:w-32 lg:h-32 h-28 overflow-clip ">
         <Image src={image} fill alt="user profile"></Image>
       </div>
 
@@ -40,6 +40,8 @@ const ProfileOverview = ({
               alt={"location"}
               width={18}
               height={18}
+              className="invert"
+
             ></Image>
             <span className="text-[16px]">{location}</span>
           </div>
@@ -49,6 +51,7 @@ const ProfileOverview = ({
               alt={"location"}
               width={18}
               height={18}
+              className="invert"
             ></Image>
             <span className="text-[16px]">{email}</span>
           </div>
@@ -58,6 +61,8 @@ const ProfileOverview = ({
               alt={"location"}
               width={18}
               height={18}
+              className="invert"
+
             ></Image>
             <span className="text-[16px]">
               {availability ? "Available for work" : "Not Available for work"}
@@ -65,8 +70,8 @@ const ProfileOverview = ({
           </div>
         </div>
 
-        <div className="mt-3 ">
-          <p className=" text-left ">{description}</p>
+        <div className="mt-4  max-w-4xl ">
+          <p className=" text-left text-[16px]">{description}</p>
         </div>
 
         <div className="mt-3 mb-2 w-full flex-start">

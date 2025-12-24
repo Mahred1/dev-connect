@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import StatCard from './StatCard'
 
 const ProfileStats = ({id}:{id:string}) => {
   return (
@@ -7,16 +8,11 @@ const ProfileStats = ({id}:{id:string}) => {
         <span className='text-xl'>Statistics</span>
 
         <div className='mt-3'>
-            <div className='flex gap-3  items-center '>
-                <div className='relative w-10 h-10'>
-                <Image className='bg-red-100  rounded-md p-2'  src="/icons/jobs.svg" fill alt="Profile View" />
-
-                </div>
-                <div className='flex flex-col'>
-                    <span className='text-slate-600'>Profile View</span>
-                    <span className='text-md'>1,245</span>
-                </div>
-            </div>
+           
+            <StatCard image={"/icons/jobs.svg"} heading="Profile View" value={1245}/>
+            <StatCard image={"/icons/projects.svg"} heading="Projects" value={22}/>
+            <StatCard image={"/icons/network.svg"} heading="Connections" value={125}/>
+            <StatCard image={"/icons/bell.svg"} heading="Achievments" value={89}/>
         </div>
     </div>
   )

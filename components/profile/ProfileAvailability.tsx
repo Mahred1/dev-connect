@@ -3,7 +3,7 @@ import React from "react";
 
 const ProfileAvailability = ({
   status,
-  fullTIme,
+  fullTime,
   offers,
 }: {
   status: boolean;
@@ -36,7 +36,7 @@ const ProfileAvailability = ({
 
         <div className="flex justify-between items-center pb-0.5">
           <span className="text-slate-600 ">Full-time</span>
-          <span>{fullTIme ? "Considering" : "Not considering"}</span>
+          <span>{fullTime ? "Considering" : "Not considering"}</span>
         </div>
       </div>
     </div>

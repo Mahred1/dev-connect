@@ -1,10 +1,10 @@
-import AboutProfile from "@/components/profile/AboutProfile";
+import SkillsCard from "@/components/profile/SkillsCard";
 
 const page = async ({ params }: { params: { id: string } }) => {
   const { id } = await params;
   return (
     <div className="flex justify-start">
-<AboutProfile/>
+      <SkillsCard />
     </div>
   );
 };

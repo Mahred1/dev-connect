@@ -1,11 +1,10 @@
-import Image from "next/image";
 import React from "react";
 import StatCard from "./StatCard";
 
 const ProfileStats = ({ id }: { id: string }) => {
   return (
-    <div className="bg-slate-50 rounded-2xl border-2 border-slate-300 px-4  pt-6 pb-4 w-[350px]">
-      <span className="text-xl">Statistics</span>
+    <div className="bg-slate-50 rounded-2xl border border-slate-300 px-4  pt-6 pb-4 w-[350px]">
+      <h2 className="text-xl">Statistics</h2>
 
       <div className="mt-8">
         <StatCard

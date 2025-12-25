@@ -13,10 +13,10 @@ const StatCard = ({
   color:string
 }) => {
   return (
-    <div className="flex gap-3  items-center mb-4">
+    <div className="flex gap-3  items-center mb-4 border-b pb-2  border-slate-200">
       <div className="relative w-10 h-10">
         <Image
-          className={`bg-${color}-100  rounded-md p-2`}
+          className={`bg-${color}-200   rounded-md p-2`}
           src={image}
           fill
           alt="Profile View"
